@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Break : Menghentikan proses
+      //   let nilai = 1;
+
+      //   while (true) {
+      //     document.writeln(`<p>Perulangan ke ${nilai}</p>`);
+      //     nilai++;
+
+      //     if (nilai > 10) {
+      //       break;
+      //     }
+      //   }
+
+      // Continue : Menghentikan proses saat ini dan melanjutkan keproses setelahnya
+
+      for (let nilai = 1; nilai <= 30; nilai++) {
+        if (nilai % 2 === 1) {
+          continue;
+        }
+        document.writeln(`<p>Perulangan Genap ${nilai}</p>`);
+      }
+    </script>
+  </body>
+</html>

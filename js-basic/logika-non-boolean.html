@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Operator Logika non Boolean
+
+      // Operator || : mengambil nilai Truthy pertama
+
+      console.info("Hello" || "");
+      console.info(0 || []);
+      console.info(null || undefined);
+      console.info(1 || "Hai");
+      console.info(undefined || 0);
+
+      console.info("    ");
+
+      // Operator && : mengambil nilai Falsy pertama
+      console.info("Hello" && "");
+      console.info(0 && []);
+      console.info(null && undefined);
+      console.info(1 && "Hai");
+      console.info(undefined && 0);
+    </script>
+  </body>
+</html>

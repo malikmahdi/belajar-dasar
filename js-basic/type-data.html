@@ -1,0 +1,74 @@
+<html>
+  <head></head>
+  <body>
+    <h3>Type data dan Variabel Javascript</h3>
+    <script>
+      // Variabel  >>>>>>>>
+      /*
+      Variabel javascript memiliki 3 type :
+      1. var : Nilainya boleh diubah
+      2. let : Hampir sama dengan var namun ada perbedaan sedikit
+      3. const : Nilainya tidak boleh diubah 
+      */
+
+      // Type Data >>>>>>>>
+
+      // String
+      let iniString = "ini String";
+      document.writeln(iniString);
+
+      document.writeln("<br>");
+
+      // Int
+      let iniAngka = 123;
+      document.writeln(iniAngka);
+
+      document.writeln("<br>");
+
+      // Boolean
+      document.writeln(true);
+      document.writeln(false);
+
+      document.writeln("<br>");
+
+      // Object
+      let orang = {
+        "nama lengkap": "Malik Mahdi",
+        kelamin: "Laki-laki",
+        umur: 20,
+      };
+      // orang["nama"] = "Malik";
+      // orang["kelamin"] = "Laki-laki";
+      // orang["umur"] = 20;
+
+      console.info(orang["nama lengkap"]);
+
+      delete orang["kelamin"];
+      console.table(orang);
+
+      document.writeln("<br>");
+
+      // Array
+      document.writeln("Ini Array");
+      document.writeln("<br>");
+
+      let iniArr = ["malik", "alif", "daus"];
+      iniArr.unshift("Empin", "Waan");
+      iniArr.push("John");
+      iniArr.push(["user1", "user2", "user3"]);
+      iniArr[3] = "Udin";
+      delete iniArr[5];
+      //console.table(iniArr);
+
+      document.writeln("<br>");
+
+      // Array of Object
+      let iniArrObj = [
+        { namaDepan: "Malik", namaBelakang: "Mahdi" },
+        { namaDepan: "Alif", namaBelakang: "Angga" },
+      ];
+      document.writeln(iniArrObj);
+      // console.log(iniArrObj);
+    </script>
+  </body>
+</html>
