@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Parameter pada function itu adalah opsional, ketika kita memanggil function yang memiliki parameter, kita boleh saja mengisi atau tidak parameter tersebut, parameter yang kosong akan bernilai undefined(default), sebagai contohnya :
+
+      function sayHello(name, gender, city) {
+        console.info(`${name}`);
+        console.info(`${gender}`);
+        console.info(`${city}`);
+      }
+
+      sayHello();
+      sayHello("Malik Mahdi");
+      sayHello("Malik Mahdi", "Laki-laki");
+      sayHello("Malik Mahdi", "Laki-laki", "Jakarta");
+      sayHello("Malik Mahdi", "Laki-laki", "Jakarta", "Student");
+
+      // Walau tidak error jika parameter yang diisi melebihi jumlahnya, tapi ini akan berbahaya!
+    </script>
+  </body>
+</html>

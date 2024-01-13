@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Return mengembalikan nilai
+      //   function sayHello(firstName, lastName) {
+      //     const say = `Hallo ${firstName} ${lastName}`;
+      //     return say;
+      //   }
+
+      //   const result = sayHello("Malik", "Mahdi");
+      //   document.writeln(`<p>${result}</p>`);
+
+      //   Return juga dapat digunakan lebih dari 1, namun yang dikembalikan hanya salah satu
+      //   function getValue(value) {
+      //     if (value > 90) {
+      //       return "A";
+      //     } else if (value > 80) {
+      //       return "B";
+      //     } else if (value > 70) {
+      //       return "C";
+      //     } else {
+      //       return "D";
+      //     }
+      //   }
+      //   const resultValue = getValue(69);
+      //   document.writeln(`<p>${resultValue}</p>`);
+
+      // Menghentikan program dengan return
+      // function isContains(array, searchValue) {
+      //   for (const element of array) {
+      //     console.info(`Iterasi element ${element}`);
+      //     if (element === searchValue) {
+      //       return true;
+      //     }
+      //   }
+      //   return false;
+      // }
+
+      // const arr = [1, 2, 5, 346, 36, 65];
+      // const search = 36;
+      // const result = isContains(arr, search);
+      // document.writeln(`<p>${result}</p>`);
+
+      // Mengembalikan nilai dengan berbagai tipe data yang berbeda, dimana harus disimpan dalam array jika ingin dikembalikan dengan function
+      function allType() {
+        const myArr = [1, "nama", true, undefined];
+        return myArr;
+      }
+
+      const result = allType();
+      console.info(result);
+    </script>
+  </body>
+</html>

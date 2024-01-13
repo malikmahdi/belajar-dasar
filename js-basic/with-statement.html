@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // With statement tidak direkomendasikan untuk digunakan
+      const person = {
+        name: "Malik Mahdi",
+        umur: 20,
+        city: "Jakarta Utara",
+      };
+
+      // Non With statement
+      console.info(person.name);
+      console.info(person.umur);
+      console.info(person.city);
+
+      // With statement
+      with (person) {
+        console.info(name);
+        console.info(umur);
+        console.info(city);
+      }
+    </script>
+  </body>
+</html>

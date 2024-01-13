@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Default parameter adalah nilai pengganti ketika parameter tidak diberikan nilai atau nilai itu sendiri bernilai undefined, sehingga yang dikeluarkan adalah nilai default pada parameter tersebut, sebagai contoh :
+
+      function intro(name, gender = "Unknown") {
+        console.info(name, gender);
+      }
+
+      intro();
+      intro("Malik");
+      intro("Malik", "Laki-laki");
+      intro("Malik", undefined);
+      intro("Malik", null);
+    </script>
+  </body>
+</html>

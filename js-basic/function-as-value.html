@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Functionn juga dapat sebagai value, parameter dalam function, ataupun disimpan dalam variabel
+
+      function sayhello(nama) {
+        document.writeln(`<p>Hallo ${nama}</p>`);
+      }
+      sayhello("Maman");
+      //
+      const say = sayhello;
+      say("John");
+      //
+      function giveName(callback) {
+        callback("Alif");
+      }
+      giveName(sayhello);
+      giveName(say);
+    </script>
+  </body>
+</html>

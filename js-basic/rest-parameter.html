@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Rest parameter : paramater yang bisa dikirim data dengan sebanyak-banyaknya yang akan dikonversikan menjadi array
+      // rest parameter hanya boleh 1 dalam sebuah function
+      // rest parameter tidak boleh diawal/ ditengah, harus diakhir parameter lain, misal ada 5 parameter, maka rest parameter hrus berada diurutan ke-5, namun boleh saja di awal jika function hanya membutuhkan 1 parameter
+      // example :
+
+      function sum(buah, ...databuah) {
+        total = 0;
+        for (const item of databuah) {
+          total += item;
+        }
+        document.writeln(`<p>Total buah ${buah} adalah ${total}</p>`);
+      }
+
+      sum("mangga", 23, 4, 6, 10);
+      sum("anggur", 23, 4, 6, 40);
+      sum("jeruk", 23, 4, 6, 20);
+
+      // spread syntax
+
+      function sumLagi(motor, ...data) {
+        total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        document.writeln(`<p>motor ${motor} berjumlah ${total}</p>`);
+      }
+      const arrMotor = [12, 2, 7, 8, 5, 1];
+      const arrMotor2 = [12, 2, 2, 3, 1, 1];
+      sumLagi("Honda", ...arrMotor2);
+
+      // menggunakan object arguments/ metoda lama
+
+      function oldSum() {
+        total = 0;
+        for (const item of arguments) {
+          total += item;
+        }
+        document.writeln(`<p>Old sum ${total}</p>`);
+      }
+
+      oldSum(9, 0, 23, 2, 1);
+    </script>
+  </body>
+</html>

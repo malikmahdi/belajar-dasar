@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Anonymous function atau function tanpa nama
+
+      // didalam variabel
+      let say = function (nama) {
+        document.writeln(`hallo ${nama}`);
+      };
+
+      say("Budi");
+
+      // didalam function sebagai parameter
+      function giveName(callback) {
+        callback(`Maman`);
+      }
+
+      giveName(function (name) {
+        document.writeln(`<p>hi ${name}</p>`);
+      });
+    </script>
+  </body>
+</html>
